@@ -1,24 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import Troller from './troller assignment/Troller';
+
+const trollerInfo=[
+  {
+    name: 'troller 1',
+    id: 1
+  },
+  {
+    name: 'troller 2',
+    id: 2
+  },
+  {
+    name: 'troller 3',
+    id: 3
+  },
+  {
+    name: 'troller 4',
+    id: 4
+  },
+  {
+    name: 'troller 5',
+    id: 5
+  },
+  {
+    name: 'troller 6',
+    id: 6
+  }
+]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Troller troller={trollerInfo}/>
   );
 }
 
