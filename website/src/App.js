@@ -1,5 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
+import TempLink from './Temp-link';
 import Troller from "./pages/troller-vehicle assignment/Troller";
 import Vehicle from "./pages/troller-vehicle assignment/Vehicle";
 import TaskAssignment1 from "./pages/task-assignment/TaskAssignment1";
@@ -69,8 +70,8 @@ const taskInfo = {
 
 function App() {
   return (
-    <>
       <Routes>
+      <Route path='/' element={<TempLink />} />
         <Route path="/Vehicle" element={<Vehicle vehicle={vehicleInfo} />} />
         <Route path="/Troller" element={<Troller troller={trollerInfo} />} />
         <Route
@@ -82,7 +83,6 @@ function App() {
           element={<TaskAssignment2 task={taskInfo} />}
         />
       </Routes>
-    </>
   );
 }
 
