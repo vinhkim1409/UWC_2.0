@@ -39,7 +39,9 @@ vehicle}}) {
             </div>
 
             <div className={styles.staff}>
-                <div className={styles.avatar}></div>
+               
+                <img  className={styles.avatar} alt="" src={process.env.PUBLIC_URL + 'avatar.png'} />
+                
                 <div
                 style={{ 
                     position: 'absolute',
