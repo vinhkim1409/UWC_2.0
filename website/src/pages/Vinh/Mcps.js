@@ -12,19 +12,31 @@ function Map_area({ mcps, type }) {
         <h3>BẢN ĐỒ MCPS</h3>
         <table>
           <tr>
-            <td>KHU VỰC A</td>
+          <td>
+            <div className={cx('areas')}>
+            KHU VỰC A
+            </div>
+            </td>
             <td>
               <Button className={cx("btn-select")}>CHỌN</Button>
             </td>
           </tr>
           <tr>
-            <td>KHU VỰC B</td>
+          <td>
+            <div className={cx('areas')}>
+            KHU VỰC B
+            </div>
+            </td>
             <td>
               <Button className={cx("btn-select")}>CHỌN</Button>
             </td>
           </tr>
           <tr>
-            <td>KhU VỰC C </td>
+          <td>
+            <div className={cx('areas')}>
+            KHU VỰC C
+            </div>
+            </td>
             <td>
               <Button className={cx("btn-select")}>CHỌN</Button>
             </td>

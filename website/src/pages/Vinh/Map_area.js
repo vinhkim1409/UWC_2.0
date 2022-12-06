@@ -12,23 +12,26 @@ function Map_area({ map_area, type }) {
         <h3>BẢN ĐỒ</h3>
         <table>
           <tr>
-            <td>KHU VỰC A</td>
+            <td>
+            <div className={cx('areas')}>
+            KHU VỰC A
+            </div>
+            </td>
             <td>
               <Button className={cx("btn-select")}>CHỌN</Button>
             </td>
           </tr>
           <tr>
-            <td>KHU VỰC B</td>
+          <td>
+            <div className={cx('areas')}>
+            KHU VỰC B
+            </div>
+            </td>
             <td>
               <Button className={cx("btn-select")}>CHỌN</Button>
             </td>
           </tr>
-          <tr>
-            <td>KHU VỰC C </td>
-            <td>
-              <Button className={cx("btn-select")}>CHỌN</Button>
-            </td>
-          </tr>
+          
           
           
         </table>
