@@ -1,0 +1,35 @@
+.map-data {
+    cursor: grab;
+    overflow: scroll;
+    // -webkit-overflow-scrolling: touch; 
+    height: 500px;
+    max-width: 1200px;
+    img {
+        // width: 150%;
+        overflow-x: scroll;
+        // height: 100%;
+    }
+    &::-webkit-scrollbar {
+        visibility: hidden;
+        display: none;
+    }
+}
+.append {
+    margin-top: 10px;
+    h1 {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        
+        .two-buttons {
+            margin-left: auto;
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            img {
+                cursor: pointer;
+                height: 1.5em;
+            }
+        }
+    }
+}
