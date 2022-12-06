@@ -1,13 +1,12 @@
 import classNames from "classnames/bind";
 import styles from "./TaskAssignment.module.scss";
 import { Button } from "react-bootstrap";
-
+// import { Navbar } from "../../comp/navbar.js";
 const cx = classNames.bind(styles);
 
 function TaskAssignment({ task, type }) {
   return (
     <>
-      <div className={cx("header")}>header</div>
       <div className={cx("main")}>
         <h3>Phân công nhiệm vụ</h3>
         <table>
@@ -49,7 +48,6 @@ function TaskAssignment({ task, type }) {
           <Button className={cx("btn-submit")}>Xác nhận</Button>
         </div>
       </div>
-      <div className={cx("footer")}>footer</div>
     </>
   );
 }
