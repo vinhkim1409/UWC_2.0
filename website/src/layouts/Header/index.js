@@ -123,7 +123,7 @@ function Header() {
                onMouseOver={handleClick} 
                >
                    <List color="currentColor" size={50} />
-                   <PersonCircle color="#A1A1A1" size={55} />
+                   <PersonCircle color="#A1A1A1" size={58} />
                </button>    
            
        }

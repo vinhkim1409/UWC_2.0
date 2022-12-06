@@ -1,4 +1,6 @@
 import styles from './styles.module.css'
+import {TbMap2} from 'react-icons/tb'
+import {RiMapPinLine} from 'react-icons/ri'
 function TaskItem({Task:{ 
 TaskID,
 Name,
@@ -10,6 +12,14 @@ StaffName,
 StaffID,
 position,
 vehicle}}) {
+    let icon=null
+    if(position=='Collector')
+    {icon=(<TbMap2 size={60}/>)
+    }
+    else 
+    {
+        icon=(<RiMapPinLine size={60}/>)
+    }
     return ( 
         <> 
             <div className={styles.khung}>
@@ -23,7 +33,9 @@ vehicle}}) {
                 <div>Điểm bắt đầu: {Start}</div>
                 <div>Điểm kết thúc: {End}</div>
                 </did>
-                <div className={styles.icontask}></div>
+                <div className={styles.icontask}>
+                   {icon} 
+                </div>
             </div>
 
             <div className={styles.staff}>
