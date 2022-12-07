@@ -1,11 +1,11 @@
 import Footer from "../Footer";
 import Header from "../Header";
 
-function DefaultLayout({chirldren}) {
+function DefaultLayout({children}) {
     return ( 
         <div className="App">
         <Header/>
-         {chirldren}
+         {children}
          <Footer/>
         </div> 
        
