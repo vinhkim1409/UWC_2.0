@@ -11,7 +11,7 @@ function Ass_janitor({ ass_janitor, type }) {
       <div className={cx("main")}>
         <h3>DANH SÁCH NHÂN VIÊN LAO CÔNG</h3>
         <table>
-        <div className={"App"}>
+        <div className={styles.cell}>
         <tr>
             
             <td>Nguyễn Văn A</td>{"\n"}
