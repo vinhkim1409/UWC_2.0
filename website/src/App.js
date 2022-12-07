@@ -5,10 +5,17 @@ import Troller from "./pages/troller-vehicle assignment/Troller";
 import Vehicle from "./pages/troller-vehicle assignment/Vehicle";
 import TaskAssignment1 from "./pages/task-assignment/TaskAssignment1";
 import TaskAssignment2 from "./pages/task-assignment/TaskAssignment2";
+
+import Mcps from "./pages/Vinh/Mcps"
+import Map_area from "./pages/Vinh/Map_area"
+import Ass_collector from "./pages/Quan/Ass_collector"
+import Ass_janitor from "./pages/Quan/Ass_janitor"
+
 import Map from "./pages/map/map"
 import TaskPage from "./layouts/Task/TaskPage/Task.js"
 import Navbar from "./comp/navbar"
 import Footer from "./comp/footer"
+
 
 const trollerInfo = [
   {
@@ -71,6 +78,76 @@ const taskInfo = {
   startPlace: "Toà BA3",
   endPlace: "MCP tòa D05",
 };
+const map_area_info =[
+  {
+    name: "Khu vực A",
+  },
+  {
+    name: "Khu vực B",
+  },
+  
+];
+const mcps_info =[
+  {
+    name: "Khu vực A",
+  },
+  {
+    name: "Khu vực B",
+  },
+  {
+    name: "Khu vực C",
+  },
+  
+];
+
+const Ass_collector_info = [
+  {
+    name: "Nguyễn Văn A",
+    id: 1,
+
+  },
+  {
+    name: "Nguyễn Văn B",
+    id: 2,
+  },
+  {
+    name: "Nguyễn Văn C",
+    id: 3,
+  },
+  {
+    name: "Trần Thị D",
+    id: 4,
+  },
+  {
+    name: "Lê Thị F",
+    id: 5,
+  },
+
+];
+const Ass_janitor_info = [
+  {
+    name: "Nguyễn Văn A",
+    id: 1,
+
+  },
+  {
+    name: "Nguyễn Văn B",
+    id: 2,
+  },
+  {
+    name: "Nguyễn Văn C",
+    id: 3,
+  },
+  {
+    name: "Trần Thị D",
+    id: 4,
+  },
+  {
+    name: "Lê Thị F",
+    id: 5,
+  },
+
+];
 
 function App() {
   return (
@@ -88,10 +165,28 @@ function App() {
           path="/Task-Assignment-2"
           element={<TaskAssignment2 task={taskInfo} />}
         />
+
+        <Route path="/Map_area" element={<Map_area map_area={map_area_info} />} />
+        <Route path="/Mcps" element={<Mcps mcps={mcps_info} />} />
+
+
+
+        <Route path="/Ass_collector" element={<Ass_collector ass_collector={Ass_collector_info} />} />
+        <Route path="/Ass_janitor" element={<Ass_janitor ass_janitor={Ass_janitor_info} />} />
+
+
+
+        
+
+
+        
+
+
         <Route
           path="/map/*"
           element={<Map />}
         />
+
       </Routes>
     </>
   );
