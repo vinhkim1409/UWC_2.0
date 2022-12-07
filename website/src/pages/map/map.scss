@@ -1,0 +1,10 @@
+.page {
+    margin: auto;
+    max-width: 1200px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    .header {
+        margin: 0.5em auto;
+    }
+}

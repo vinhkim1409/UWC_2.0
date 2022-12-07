@@ -5,10 +5,17 @@ import Troller from "./pages/troller-vehicle assignment/Troller";
 import Vehicle from "./pages/troller-vehicle assignment/Vehicle";
 import TaskAssignment1 from "./pages/task-assignment/TaskAssignment1";
 import TaskAssignment2 from "./pages/task-assignment/TaskAssignment2";
+
 import Mcps from "./pages/Vinh/Mcps"
 import Map_area from "./pages/Vinh/Map_area"
 import Ass_collector from "./pages/Quan/Ass_collector"
 import Ass_janitor from "./pages/Quan/Ass_janitor"
+
+import Map from "./pages/map/map"
+import TaskPage from "./layouts/Task/TaskPage/Task.js"
+import Navbar from "./comp/navbar"
+import Footer from "./comp/footer"
+
 
 const trollerInfo = [
   {
@@ -144,10 +151,12 @@ const Ass_janitor_info = [
 
 function App() {
   return (
+    <>
       <Routes>
-      <Route path='/' element={<TempLink />} />
-        <Route path="/Vehicle" element={<Vehicle vehicle={vehicleInfo} />} />
-        <Route path="/Troller" element={<Troller troller={trollerInfo} />} />
+        <Route path='/' element={<TaskPage/>} />
+
+        <Route path="/Vehicle/*" element={<Vehicle vehicle={vehicleInfo} />} />
+        <Route path="/Troller/*" element={<Troller troller={trollerInfo} />} />
         <Route
           path="/Task-Assignment-1"
           element={<TaskAssignment1 task={taskInfo} />}
@@ -156,6 +165,7 @@ function App() {
           path="/Task-Assignment-2"
           element={<TaskAssignment2 task={taskInfo} />}
         />
+
         <Route path="/Map_area" element={<Map_area map_area={map_area_info} />} />
         <Route path="/Mcps" element={<Mcps mcps={mcps_info} />} />
 
@@ -171,7 +181,14 @@ function App() {
 
         
 
+
+        <Route
+          path="/map/*"
+          element={<Map />}
+        />
+
       </Routes>
+    </>
   );
 }
 
