@@ -12,7 +12,6 @@ function Vehicle({vehicle=[]}){
 
     return(
         <>
-        <div className={cx('header')}>header</div>
         <div className={cx('main')}>
             <h3>Phân công nhiệm vụ</h3>
             <h1>Phương tiện</h1>
@@ -30,9 +29,6 @@ function Vehicle({vehicle=[]}){
             </div>
             <Button className={cx('submit')} >Xác nhận</Button>
         </div>
-        <Link to='/Troller' >Trang xe đẩy</Link>
-
-        <div className={cx('footer')}>footer</div>
         </>
     )
 }

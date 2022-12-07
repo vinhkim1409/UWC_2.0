@@ -11,7 +11,6 @@ function Troller({troller=[]}){
 
     return(
         <>
-        <div className={cx('header')}>header</div>
         <div className={cx('main')}>
             <h3>Phân công nhiệm vụ</h3>
             <h1>Xe đẩy</h1>
@@ -29,8 +28,6 @@ function Troller({troller=[]}){
             </div>
             <Button className={cx('submit')} >Xác nhận</Button>
         </div>
-                <Link to='/Vehicle' >Trang phương tiện</Link>
-        <div className={cx('footer')}>footer</div>
         </>
     )
 }

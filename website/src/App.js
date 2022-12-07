@@ -1,6 +1,5 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import TempLink from './Temp-link';
 import Troller from "./pages/troller-vehicle assignment/Troller";
 import Vehicle from "./pages/troller-vehicle assignment/Vehicle";
 import TaskAssignment1 from "./pages/task-assignment/TaskAssignment1";
