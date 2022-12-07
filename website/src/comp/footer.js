@@ -4,7 +4,11 @@ import "./footer.scss"
 export default class Footer extends Component {
     render() {
         return (
-            <div className="footer">Footer</div>
+            <div className="footer">
+                <div className="text1">@2022UWC2.0</div>
+                    <a href = '/' className="text2">Quy chế sử dụng</a>
+                    <a href = '/' className="text3">Chính sách bảo mật</a>
+            </div>
         )
     }
 }

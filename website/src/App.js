@@ -6,6 +6,9 @@ import Vehicle from "./pages/troller-vehicle assignment/Vehicle";
 import TaskAssignment1 from "./pages/task-assignment/TaskAssignment1";
 import TaskAssignment2 from "./pages/task-assignment/TaskAssignment2";
 import Map from "./pages/map/map"
+import TaskPage from "./layouts/Task/TaskPage/Task.js"
+import Navbar from "./comp/navbar"
+import Footer from "./comp/footer"
 
 const trollerInfo = [
   {
@@ -73,7 +76,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={<TempLink />} />
+        <Route path='/' element={<TaskPage/>} />
 
         <Route path="/Vehicle/*" element={<Vehicle vehicle={vehicleInfo} />} />
         <Route path="/Troller/*" element={<Troller troller={trollerInfo} />} />
