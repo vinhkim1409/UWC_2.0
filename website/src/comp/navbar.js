@@ -6,7 +6,9 @@ export default class Navbar extends Component {
     render() {
         return (
             <div className="nav">
+
                 <Link className="logo" to="/">
+
                     {/* <div className="logo"> */}
                     <img alt="" src={process.env.PUBLIC_URL + '/logo.png'} />
                     <h1>UWC 2.0</h1>
@@ -19,6 +21,7 @@ export default class Navbar extends Component {
                         </div>
                         <div className="dropdown--selection">
                             <div className="selection">
+
                                 <img className="selection--img" alt="" src={process.env.PUBLIC_URL + '/janitor.png'} />
                                 <a href="/Task-assignment-1"> Janitor   </a>
                             </div>
@@ -30,6 +33,7 @@ export default class Navbar extends Component {
                     </div>
                     <img className="nav--img" alt="" src={process.env.PUBLIC_URL + '/notification.png'} />
                     <img className="nav--img" alt="" src={process.env.PUBLIC_URL + '/message.png'} />
+
                     
                     <div className="dropdown--menu">
                     <div className="selection">
